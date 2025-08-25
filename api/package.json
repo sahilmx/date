@@ -1,0 +1,29 @@
+{
+  "name": "romantic-weekend-invitation",
+  "version": "1.0.0",
+  "description": "A romantic weekend invitation website with email functionality",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'Static site - no build needed'",
+    "start": "vercel dev"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.7"
+  },
+  "devDependencies": {
+    "@vercel/node": "^3.0.12"
+  },
+  "keywords": [
+    "romantic",
+    "invitation",
+    "date",
+    "weekend",
+    "email"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
