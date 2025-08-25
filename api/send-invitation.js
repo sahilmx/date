@@ -1,5 +1,5 @@
 // api/send-invitation.js
-import nodemailer from 'nodemailer';
+const nodemailer = require('nodemailer');
 
 export default async function handler(req, res) {
   // Set CORS headers
@@ -41,10 +41,10 @@ export default async function handler(req, res) {
   try {
     // Create transporter using environment variables
     const transporter = nodemailer.createTransporter({
-      service: 'gmail', // or your preferred email service
+      service: 'hotmail', // Works for outlook.com, hotmail.com, live.com
       auth: {
         user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS, // Use App Password for Gmail
+        pass: process.env.EMAIL_PASS, // Use regular Outlook password
       },
     });
 
